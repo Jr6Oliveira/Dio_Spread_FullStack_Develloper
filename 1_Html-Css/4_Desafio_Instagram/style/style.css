@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #fafafa
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.box-1 {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+@keyframes fadein {
+    0% {opacity: 1;}
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    92% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.box-1 img:nth-child(1) {
+  animation: fadein 20s ease-in-out infinite;
+  position: relative;
+  z-index: 4;
+}
+
+.box-1 img:nth-child(2) {
+  animation: fadein 45s ease-in-out infinite;
+  position: absolute;
+  z-index: 3;
+}
+
+.box-1 img:nth-child(3) {
+  animation: fadein 70s ease-in-out infinite;
+  position: absolute;
+  z-index: 2;
+}
+
+.box-1 img:nth-child(4) {
+  position: absolute;
+  z-index: 1;
+}
+
+.box-2 {
+    margin-left: 25px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+}
+
+
+.box-2 > a {
+    text-decoration: none;
+    color: #0095F6;
+}
+
+.box-3 {
+    background-color: white;
+    border: solid 1px lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 333px;
+    width: 348px;
+    padding: 10px 0;
+    margin-top: 100px;
+}
+
+.logo-instagram {
+    padding-top: 25px;
+    width: auto;
+    height: 75px;
+}
+
+.foto-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 6rem; 
+    margin-bottom: 15px;   
+}
+
+.login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0095F6;
+    border-radius: 4px;
+    padding: 7px 9px;
+    margin-bottom: 5px;
+}
+
+.login_button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 550;
+}
+
+.remove-account {
+    padding-bottom: 10px;
+}
+
+.remove-account a {
+    text-decoration: none;
+    color: #0095F6;
+    font-weight: 500;
+}
+
+.box-4 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px;
+    color: lightgray;
+    height: 90px;
+    width: 348px;
+    margin: 10px 0;
+    padding: 25px 0;
+}
+
+.box-4 a {
+    text-decoration: none;
+    color: #0095F6;
+    font-weight: 500;
+}
+
+.box-4 p {
+    color: #8E8E8E;
+}
+
+.switch-user {
+    color: #8E8E8E;
+}
+
+.box-5 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 25px 20px 5px 20px;
+    font-family: '-apple-system', BlinkMacSystemFont, sans-serif;
+}
+
+.button_store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.button_store img {
+    width: 134px;
+    height: 40px;
+    margin: 10px 0;
+    padding-left: 5px;
+}
+
+.footer {
+    margin: 50px 0;
+}
+
+.menu:nth-child(1) {
+    padding-bottom: 7px;
+}
+
+.menu:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links nav {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    padding: 0px 8px;
+    text-decoration: none;
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+    .box-0 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        margin-left: -50px;
+    }
+
+    .footer {
+        margin-left: 60px;
+        width: 90%;
+    }
+
+    .box-0{
+        width: 90%;
+    }
+
+    .box-1 {
+        display: none;
+    }
+
+    .box-3 {
+        width: 100%;
+        
+    }
+    
+    .box-4 {
+        border: 1px solid transparent;
+        border: solid lightgray 1px;
+    }
+}

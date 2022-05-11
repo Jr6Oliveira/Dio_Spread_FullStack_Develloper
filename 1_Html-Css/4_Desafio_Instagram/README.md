@@ -1,0 +1,1 @@
+Fugi um pouquinho do que pedia a aula e criei o efeito de transição da página do instagram.

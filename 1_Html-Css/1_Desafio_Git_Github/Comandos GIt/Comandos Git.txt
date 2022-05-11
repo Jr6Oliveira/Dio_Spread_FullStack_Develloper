@@ -1,0 +1,36 @@
+COMANDOS GIT
+
+git config --global user.name "nome do usuario"                      configura nome de user do github
+git config --global user.email "email do github"                     configura email de user   
+git remote add origin link repositorio github                        conecta ao repositório do github
+git config --global core.editor "nome do editor"                     configura editor de texto principal
+
+
+git init                                                             inicia um repositorio vazio local
+git status                                                           mostra arquivos que não estão versionalizados
+git add .                                                            adiciona todos os arquivos não versionalizados
+git commit -m "comentário"                                           cria commit sobre as versões dos arquivos
+git push                                                             envia arquivos pro github
+gitreflog                                                            mostra os logs dos arquivos
+git reset --hard "id"                                                volta os arquivos para versões anteriores
+
+
+git branch                                                           mostrar as branchs
+git branch nome da branch                                            criar nova branch
+git checkout -b nome da branch master                                criar uma nova branch a partir da branch master
+git checkout nome da branch                                          selecionar outra branch como principal
+git pull                                                             trazer atualizações do github pro git
+git merge nome da branch secundaria                                  unir tudo entre a branch secundária e principal
+git clone                                                            clonar repositorio github pro pc
+git push                                                             subir com os arquivos pro github 
+
+
+pwd                                                                  mostra o diretorio atual 
+ls                                                                   mostra o diretorio atual
+ls -a                                                                mostra diretórios ocultos
+cd  nome da pasta                                                    abre pasta designado
+mkdir nome da pasta                                                  cria pasta designada
+
+
+touch nome do arquivo.extensão                                       cria arquivo na pasta atual
+touch nome da pasta/nome do arquivo.extensão                         cria arquivo na designada
