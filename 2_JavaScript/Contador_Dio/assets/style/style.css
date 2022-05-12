@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+
+:root {
+    --cor0: #da9494;
+    --cor1: #b13434;
+    --cor2: #6e0707;
+    --cor3: #ffffff;
+    
+    --fonte-padrao: 'Cabin', sans-serif;
+}
+
+* {
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cor0);
+    margin-top: 250px;
+}
+
+.container {
+    background-color: var(--cor1);
+    border: 2px solid var(--cor3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;   
+}
+
+h1, p {
+    color: var(--cor3);
+    margin: 10px 0 5px 0;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#counter {
+    display: flex;
+    padding-top: 20px;
+}
+
+#counter button {
+    font-size: 24px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--cor3);
+    background-color: var(--cor2);
+    color: var(--cor3);
+    padding-bottom: 5px;
+}
+
+.zerar {
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid var(--cor3);
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+
+#currentNumber {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 22px;
+    color: var(--cor3);
+}
